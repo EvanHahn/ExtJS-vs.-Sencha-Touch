@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<style type="text/css">
+	header {
+		margin-top: 1em;
+	}
+	td, th {
+		text-align: center;
+	}
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Ext JS versus Sencha Touch</title>
+
+</head>
+<body class="container">
+
+	<header class="well">
+
+		<h1>Ext JS versus Sencha Touch</h1>
+
+		<p><a href="http://www.sencha.com/products/extjs/">Ext JS</a> and <a href="http://www.sencha.com/products/touch">Sencha Touch</a> are similar frameworks, but they aren't identical. How are they different?</p>
+
+		<p>The following comes from a diff of two files: <code>ext-4.2.0.663/ext-all-debug-w-comments.js</code> and <code>touch-2.2.0/sencha-touch-all-debug.js</code>. It also comes from looking at the documentation for clarity.</p>
+
+	</header>
+
+	<table class="table table-bordered">
+
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Different?</th>
+				<th>Ext?</th>
+				<th>Touch?</th>
+				<th>Notes</th>
+			</tr>
+		</thead>
+
+		<tbody data-bind="foreach: data">
+
+			<tr data-bind="css: {
+				success: !different,
+				warning: (ext && !touch),
+				info: (touch && !ext),
+				error: (ext && touch && different)
+			}">
+
+				<td>
+					<code data-bind="text: name"></code>
+				</td>
+
+				<td>
+					<!-- ko if: !different -->
+						No
+					<!-- /ko -->
+					<!-- ko if: different -->
+						Yes
+					<!-- /ko -->
+				</td>
+
+				<td>
+					<span data-bind="ifnot: ext">No</span>
+					<span data-bind="if: ext">
+						Yes;
+						<!-- ko if: (ext !== true) -->
+							<a data-bind="attr: { href: ext }">docs</a>
+						<!-- /ko -->
+						<!-- ko if: (ext === true) -->
+							no docs
+						<!-- /ko -->
+					</span>
+				</td>
+
+				<td>
+					<span data-bind="ifnot: touch">No</span>
+					<span data-bind="if: touch">
+						Yes;
+						<!-- ko if: (touch !== true) -->
+							<a data-bind="attr: { href: touch }">docs</a>
+						<!-- /ko -->
+						<!-- ko if: (touch === true) -->
+							no docs
+						<!-- /ko -->
+					</span>
+				</td>
+
+				<td data-bind="text: notes"></td>
+
+			</tr>
+
+		</tbody>
+
+	</table>
+
+	<script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+	<script src="data.js"></script>
+	<script>
+
+	// Fill in unspecified values
+	data.forEach(function(datum) {
+		datum.ext || (datum.ext = false);
+		datum.touch || (datum.touch = false);
+		datum.different || (datum.different = !(datum.ext && datum.touch));
+		datum.notes || (datum.notes = "");
+	});
+
+	// Apply them bindings
+	var dataTable = document.getElementById("data");
+	ko.applyBindings(data, dataTable);
+
+	</script>
+
+</body>
+</html>
