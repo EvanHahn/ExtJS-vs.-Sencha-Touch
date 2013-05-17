@@ -31,7 +31,6 @@
 	</header>
 
 	<p>
-		<span class="label label-success">Same</span>
 		<span class="label label-warning">Ext JS only</span>
 		<span class="label label-info">Touch only</span>
 		<span class="label label-important">In both, different</span>
@@ -52,7 +51,6 @@
 		<tbody data-bind="foreach: data">
 
 			<tr data-bind="css: {
-				success: !different,
 				warning: (ext && !touch),
 				info: (touch && !ext),
 				error: (ext && touch && different)
