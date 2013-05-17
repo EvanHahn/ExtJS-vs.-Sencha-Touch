@@ -9,7 +9,8 @@ var data = [
 },
 {
 	"name": "Function.prototype.$extIsFunction",
-	"ext": true
+	"ext": true,
+	"notes": "Used in Ext.isFunction."
 },
 {
 	"name": "Ext.enumerables",
