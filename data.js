@@ -1,4 +1,11 @@
 var data = [
+
+/* * * * * * * * * * * *
+
+ Ext globals
+
+ * * * * * * * * * * * */
+
 {
 	"name": "Ext._startTime",
 	"ext": true
@@ -193,7 +200,9 @@ var data = [
 },
 {
 	"name": "Ext.globalEval",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-property-globalEval"
+	"ext": true,
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-property-globalEval",
+	"notes": "Ext has \"var Ext = this.ext\" before calling the eval. Touch does not."
 },
 {
 	"name": "Ext.Logger",
@@ -206,4 +215,154 @@ var data = [
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-type",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-type"
 },
+{
+	"name": "Ext.collectNamespaces",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-collectNamespaces"
+},
+{
+	"name": "Ext.addNamespaces",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-addNamespaces"
+},
+{
+	"name": "Ext.clearNamespaces",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-clearNamespaces"
+},
+{
+	"name": "Ext.getNamespace",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-getNamespace"
+},
+
+/* * * * * * * * * * * *
+
+ Ext.Version
+
+ * * * * * * * * * * * */
+
+{
+	"name": "Ext.Version",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version"
+},
+{
+	"name": "Ext.Version#toString",
+	"ext": true,
+	"touch": true
+},
+{
+	"name": "Ext.Version#valueOf",
+	"ext": true,
+	"touch": true
+},
+{
+	"name": "Ext.Version#deprecate",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-deprecate"
+},
+{
+	"name": "Ext.Version#equals",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-equals",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-equals"
+},
+{
+	"name": "Ext.Version#getBuild",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-getBuild",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-getBuild"
+},
+{
+	"name": "Ext.Version#getMajor",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-getMajor",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-getMajor"
+},
+{
+	"name": "Ext.Version#getMinor",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-getMinor",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-getMinor"
+},
+{
+	"name": "Ext.Version#getPatch",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-getPatch",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-getPatch"
+},
+{
+	"name": "Ext.Version#getRelease",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-getRelease",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-getRelease"
+},
+{
+	"name": "Ext.Version#getShortVersion",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-getShortVersion",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-getShortVersion"
+},
+{
+	"name": "Ext.Version#getVersion",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-getVersion"
+},
+{
+	"name": "Ext.Version#gt",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-gt",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-gt"
+},
+{
+	"name": "Ext.Version#gtEq",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-gtEq",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-gtEq"
+},
+{
+	"name": "Ext.Version#isGreaterThan",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-isGreaterThan",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-isGreaterThan"
+},
+{
+	"name": "Ext.Version#isGreaterThanOrEqual",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-isGreaterThanOrEqual",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-isGreaterThanOrEqual"
+},
+{
+	"name": "Ext.Version#isLessThan",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-isLessThan",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-isLessThan"
+},
+{
+	"name": "Ext.Version#isLessThanOrEqual",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-isLessThanOrEqual",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-isLessThanOrEqual"
+},
+{
+	"name": "Ext.Version#lt",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-lt",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-lt"
+},
+{
+	"name": "Ext.Version#ltEq",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-ltEq",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-ltEq"
+},
+{
+	"name": "Ext.Version#match",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-match",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-match"
+},
+{
+	"name": "Ext.Version#setVersion",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-setVersion"
+},
+{
+	"name": "Ext.Version#toArray",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-method-toArray",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-toArray"
+},
+{
+	"name": "Ext.Version#toNumber",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-toNumber"
+},
+{
+	"name": "Ext.Version::compare",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-static-method-compare",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-static-method-compare"
+},
+{
+	"name": "Ext.Version::getComponentValue",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-static-method-getComponentValue",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-static-method-getComponentValue"
+},
+
 ];
