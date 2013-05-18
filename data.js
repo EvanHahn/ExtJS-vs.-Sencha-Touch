@@ -232,6 +232,32 @@ var data = [
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-getNamespace"
 },
 
+{
+	"name": "Ext.versions",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-property-versions",
+	"touch": true
+},
+{
+	"name": "Ext.lastRegisteredVersion",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-property-lastRegisteredVersion",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-property-lastRegisteredVersion"
+},
+{
+	"name": "Ext.setVersion",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-setVersion",
+	"touch": true
+},
+{
+	"name": "Ext.getVersion",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-getVersion",
+	"touch": true
+},
+{
+	"name": "Ext.deprecate",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-deprecate",
+	"touch": true
+},
+
 /* * * * * * * * * * * *
 
  Ext.Version
@@ -369,5 +395,14 @@ var data = [
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-static-method-getComponentValue",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-static-method-getComponentValue"
 },
+
+
+/* * * * * * * * * * * *
+
+ Ext.String
+
+ * * * * * * * * * * * */
+
+// TODO
 
 ];
