@@ -355,12 +355,17 @@ var data = [
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-method-toNumber"
 },
 {
-	"name": "Ext.Version::compare",
+	"name": "Ext.Version.releaseValueMap",
+	"ext": true,
+	"touch": true,
+},
+{
+	"name": "Ext.Version.compare",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-static-method-compare",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-static-method-compare"
 },
 {
-	"name": "Ext.Version::getComponentValue",
+	"name": "Ext.Version.getComponentValue",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-static-method-getComponentValue",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-static-method-getComponentValue"
 },
