@@ -281,6 +281,12 @@ var data = [
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-urlAppend",
 	"notes": "Deprecated."
 },
+{
+	"name": "Ext.num",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-num",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-num",
+	"notes": "Deprecated."
+},
 
 /* * * * * * * * * * * *
 
@@ -543,6 +549,14 @@ var data = [
 {
 	"name": "Ext.String.splitWords",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-splitWords"
-}
+},
+
+/* * * * * * * * * * * *
+
+ Ext.Number
+
+ * * * * * * * * * * * */
+
+
 
 ];
