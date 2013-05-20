@@ -49,56 +49,34 @@
 		</thead>
 
 		<tbody data-bind="foreach: data">
-
 			<tr data-bind="css: {
 				warning: (ext && !touch),
 				info: (touch && !ext),
 				error: (ext && touch && different)
 			}">
-
+				<td><code data-bind="text: name"></code></td>
 				<td>
-					<code data-bind="text: name"></code>
+					<!-- ko if: !different -->No<!-- /ko -->
+					<!-- ko if: different -->Yes<!-- /ko -->
 				</td>
-
-				<td>
-					<!-- ko if: !different -->
-						No
-					<!-- /ko -->
-					<!-- ko if: different -->
-						Yes
-					<!-- /ko -->
-				</td>
-
 				<td>
 					<span data-bind="ifnot: ext">No</span>
 					<span data-bind="if: ext">
 						Yes;
-						<!-- ko if: (ext !== true) -->
-							<a data-bind="attr: { href: ext }">docs</a>
-						<!-- /ko -->
-						<!-- ko if: (ext === true) -->
-							no docs
-						<!-- /ko -->
+						<!-- ko if: (ext !== true) --><a data-bind="attr: { href: ext }">docs</a><!-- /ko -->
+						<!-- ko if: (ext === true) -->no docs<!-- /ko -->
 					</span>
 				</td>
-
 				<td>
 					<span data-bind="ifnot: touch">No</span>
 					<span data-bind="if: touch">
 						Yes;
-						<!-- ko if: (touch !== true) -->
-							<a data-bind="attr: { href: touch }">docs</a>
-						<!-- /ko -->
-						<!-- ko if: (touch === true) -->
-							no docs
-						<!-- /ko -->
+						<!-- ko if: (touch !== true) --><a data-bind="attr: { href: touch }">docs</a><!-- /ko -->
+						<!-- ko if: (touch === true) -->no docs<!-- /ko -->
 					</span>
 				</td>
-
 				<td data-bind="text: notes"></td>
-
 			</tr>
-
 		</tbody>
 
 	</table>
