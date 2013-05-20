@@ -30,68 +30,82 @@
 
 	</header>
 
-	<p>
-		<span class="label label-warning">Ext JS only</span>
-		<span class="label label-info">Touch only</span>
-		<span class="label label-important">In both, different</span>
-	</p>
+	<!-- ko foreach: info -->
 
-	<table class="table table-bordered">
+		<h1 data-bind="text: title"></h1>
 
-		<thead>
-			<tr>
-				<th>Name</th>
-				<th>Different?</th>
-				<th>Ext?</th>
-				<th>Touch?</th>
-				<th width="30%">Notes</th>
-			</tr>
-		</thead>
+		<p>
+			<span class="label label-warning">Ext JS only</span>
+			<span class="label label-info">Touch only</span>
+			<span class="label label-important">In both, different</span>
+		</p>
 
-		<tbody data-bind="foreach: data">
-			<tr data-bind="css: {
-				warning: (ext && !touch),
-				info: (touch && !ext),
-				error: (ext && touch && different)
-			}">
-				<td><code data-bind="text: name"></code></td>
-				<td>
-					<!-- ko if: !different -->No<!-- /ko -->
-					<!-- ko if: different -->Yes<!-- /ko -->
-				</td>
-				<td>
-					<span data-bind="ifnot: ext">No</span>
-					<span data-bind="if: ext">
-						Yes;
-						<!-- ko if: (ext !== true) --><a data-bind="attr: { href: ext }">docs</a><!-- /ko -->
-						<!-- ko if: (ext === true) -->no docs<!-- /ko -->
-					</span>
-				</td>
-				<td>
-					<span data-bind="ifnot: touch">No</span>
-					<span data-bind="if: touch">
-						Yes;
-						<!-- ko if: (touch !== true) --><a data-bind="attr: { href: touch }">docs</a><!-- /ko -->
-						<!-- ko if: (touch === true) -->no docs<!-- /ko -->
-					</span>
-				</td>
-				<td data-bind="text: notes"></td>
-			</tr>
-		</tbody>
+		<table class="table table-bordered">
 
-	</table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Different?</th>
+					<th>Ext?</th>
+					<th>Touch?</th>
+					<th width="30%">Notes</th>
+				</tr>
+			</thead>
+
+			<tbody data-bind="foreach: members">
+				<tr data-bind="css: {
+					warning: (ext && !touch),
+					info: (touch && !ext),
+					error: (ext && touch && different)
+				}">
+					<td><code data-bind="text: name"></code></td>
+					<td>
+						<!-- ko if: !different -->No<!-- /ko -->
+						<!-- ko if: different -->Yes<!-- /ko -->
+					</td>
+					<td>
+						<span data-bind="ifnot: ext">No</span>
+						<span data-bind="if: ext">
+							Yes;
+							<!-- ko if: (ext !== true) --><a data-bind="attr: { href: ext }">docs</a><!-- /ko -->
+							<!-- ko if: (ext === true) -->no docs<!-- /ko -->
+						</span>
+					</td>
+					<td>
+						<span data-bind="ifnot: touch">No</span>
+						<span data-bind="if: touch">
+							Yes;
+							<!-- ko if: (touch !== true) --><a data-bind="attr: { href: touch }">docs</a><!-- /ko -->
+							<!-- ko if: (touch === true) -->no docs<!-- /ko -->
+						</span>
+					</td>
+					<td data-bind="text: notes"></td>
+				</tr>
+			</tbody>
+
+		</table>
+
+	<!-- /ko -->
 
 	<script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
 	<script src="data.js"></script>
 	<script>
 
-	// Fill in unspecified values
-	data.forEach(function(datum) {
-		datum.ext || (datum.ext = false);
-		datum.touch || (datum.touch = false);
-		datum.different || (datum.different = !(datum.ext && datum.touch));
-		datum.notes || (datum.notes = "");
-	});
+	// Convert the data to an array and give default values
+	var info = [];
+	for (var title in data) {
+		var members = data[title];
+		members.forEach(function(datum) {
+			datum.ext || (datum.ext = false);
+			datum.touch || (datum.touch = false);
+			datum.different || (datum.different = !(datum.ext && datum.touch));
+			datum.notes || (datum.notes = "");
+		});
+		info.push({
+			title: title,
+			members: members
+		});
+	}
 
 	// Apply them bindings
 	var dataTable = document.getElementById("data");
