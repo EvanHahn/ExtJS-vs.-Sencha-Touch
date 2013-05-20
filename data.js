@@ -292,6 +292,66 @@ var data = {
 
 ],
 
+"Ext.Array": [
+
+	{
+		"name": "Ext.Array.replace",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-replace",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-replace",
+		"notes": "Implementations vary slightly."
+	},
+	{
+		"name": "Ext.Array.each",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-each",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-each"
+	},
+	{
+		"name": "Ext.Array.erase"
+		"ext": "",
+		"touch": ""
+	},
+	{
+		"name": "Ext.Array.splice"
+		"ext": "",
+		"touch": ""
+	},
+	{
+		"name": "Ext.Array.forEach",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-forEach",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-forEach",
+		"notes": "If using native forEach, Touch will return what the native forEach returns, but that doesn't matter because it's undefined."
+	},
+	{
+		"name": "Ext.Array.indexOf",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-indexOf",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-indexOf",
+		"notes": "Implementations vary slightly."
+	},
+	{
+		"name": "Ext.Array.contains",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-contains",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-contains",
+		"notes": "Implementations vary slightly."
+	},
+	{
+		"name": "Ext.Array.toArray",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-toArray",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-toArray"
+	},
+	{
+		"name": "Ext.Array.pluck",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-pluck",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-pluck"
+	},
+	{
+		"name": "Ext.Array.map",
+		"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Array-method-map",
+		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-map",
+		"notes": "Ext has some debug stuff."
+	},
+
+],
+
 /* * * * * * * * * * * *
 
  Ext.Number
