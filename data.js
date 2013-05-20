@@ -413,7 +413,7 @@ var data = [
 {
 	"name": "Ext.Version.releaseValueMap",
 	"ext": true,
-	"touch": true,
+	"touch": true
 },
 {
 	"name": "Ext.Version.compare",
@@ -456,15 +456,13 @@ var data = [
 	"name": "Ext.String.htmlEncode",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlEncode",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlEncode",
-	"different": true,
-	"notes": "Implementations vary."
+	"different": true
 },
 {
 	"name": "Ext.String.htmlDecode",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlDecode",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlDecode",
-	"different": true,
-	"notes": "Implementations vary."
+	"different": true
 },
 {
 	"name": "Ext.String.insert",
@@ -557,6 +555,41 @@ var data = [
 
  * * * * * * * * * * * */
 
-
+{
+	"name": "Ext.Number.constrain",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-constrain",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-constrain",
+	"different": true,
+	"notes": "Most notably, implementations deal with NaN differently."
+},
+{
+	"name": "Ext.Number.snap",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-snap",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-snap",
+	"notes": "Implementations vary slightly."
+},
+{
+	"name": "Ext.Number.snapInRange",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-snapInRange"
+},
+{
+	"name": "Ext.Number.toFixed",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-toFixed",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-toFixed",
+	"notes": "Implementations vary slightly."
+},
+{
+	"name": "Ext.Number.from",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-from",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-from"
+},
+{
+	"name": "Ext.Number.randomInt",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-randomInt"
+},
+{
+	"name": "Ext.Number.correctFloat",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-correctFloat"
+},
 
 ];
