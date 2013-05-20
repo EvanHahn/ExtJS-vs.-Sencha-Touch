@@ -290,6 +290,172 @@ var data = [
 
 /* * * * * * * * * * * *
 
+ Ext.Number
+
+ * * * * * * * * * * * */
+
+{
+	"name": "Ext.Number.constrain",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-constrain",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-constrain",
+	"different": true,
+	"notes": "Most notably, implementations deal with NaN differently."
+},
+{
+	"name": "Ext.Number.snap",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-snap",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-snap",
+	"notes": "Implementations vary slightly."
+},
+{
+	"name": "Ext.Number.snapInRange",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-snapInRange"
+},
+{
+	"name": "Ext.Number.toFixed",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-toFixed",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-toFixed",
+	"notes": "Implementations vary slightly."
+},
+{
+	"name": "Ext.Number.from",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-from",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-from"
+},
+{
+	"name": "Ext.Number.randomInt",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-randomInt"
+},
+{
+	"name": "Ext.Number.correctFloat",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-correctFloat"
+},
+
+/* * * * * * * * * * * *
+
+ Ext.String
+
+ * * * * * * * * * * * */
+
+{
+	"name": "Ext.String.trimRegex",
+	"touch": true,
+	"notes": "Private in Ext and public in Touch."
+},
+{
+	"name": "Ext.String.escapeRe",
+	"touch": true,
+	"notes": "Private in Ext and public in Touch."
+},
+{
+	"name": "Ext.String.formatRe",
+	"touch": true,
+	"notes": "Private in Ext and public in Touch."
+},
+{
+	"name": "Ext.String.escapeRegexRe",
+	"touch": true,
+	"notes": "Private in Ext and public in Touch."
+},
+{
+	"name": "Ext.String.htmlEncode",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlEncode",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlEncode",
+	"different": true
+},
+{
+	"name": "Ext.String.htmlDecode",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlDecode",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlDecode",
+	"different": true
+},
+{
+	"name": "Ext.String.insert",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-insert"
+},
+{
+	"name": "Ext.String.startsWith",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-startsWith"
+},
+{
+	"name": "Ext.String.endsWith",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-endsWith"
+},
+{
+	"name": "Ext.String.addCharacterEntities",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-addCharacterEntities"
+},
+{
+	"name": "Ext.String.resetCharacterEntities",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-resetCharacterEntities"
+},
+{
+	"name": "Ext.String.urlAppend",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-urlAppend",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-urlAppend"
+},
+{
+	"name": "Ext.String.trim",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-trim",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-trim"
+},
+{
+	"name": "Ext.String.capitalize",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-capitalize",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-capitalize"
+},
+{
+	"name": "Ext.String.uncapitalize",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-uncapitalize"
+},
+{
+	"name": "Ext.String.ellipsis",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-ellipsis",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-ellipsis"
+},
+{
+	"name": "Ext.String.escapeRegex",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-escapeRegex",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-escapeRegex"
+},
+{
+	"name": "Ext.String.escape",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-escape",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-escape"
+},
+{
+	"name": "Ext.String.toggle",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-toggle",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-toggle"
+},
+{
+	"name": "Ext.String.leftPad",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-leftPad",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-leftPad"
+},
+{
+	"name": "Ext.String.format",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-format",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-format"
+},
+{
+	"name": "Ext.String.repeat",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-repeat",
+	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-repeat",
+	"different": true,
+	"notes": "Ext checks for a negative count."
+},
+{
+	"name": "Ext.String.createVarName",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-createVarName"
+},
+{
+	"name": "Ext.String.splitWords",
+	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-splitWords"
+},
+
+/* * * * * * * * * * * *
+
  Ext.Version
 
  * * * * * * * * * * * */
@@ -424,172 +590,6 @@ var data = [
 	"name": "Ext.Version.getComponentValue",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Version-static-method-getComponentValue",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-static-method-getComponentValue"
-},
-
-/* * * * * * * * * * * *
-
- Ext.String
-
- * * * * * * * * * * * */
-
-{
-	"name": "Ext.String.trimRegex",
-	"touch": true,
-	"notes": "Private in Ext and public in Touch."
-},
-{
-	"name": "Ext.String.escapeRe",
-	"touch": true,
-	"notes": "Private in Ext and public in Touch."
-},
-{
-	"name": "Ext.String.formatRe",
-	"touch": true,
-	"notes": "Private in Ext and public in Touch."
-},
-{
-	"name": "Ext.String.escapeRegexRe",
-	"touch": true,
-	"notes": "Private in Ext and public in Touch."
-},
-{
-	"name": "Ext.String.htmlEncode",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlEncode",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlEncode",
-	"different": true
-},
-{
-	"name": "Ext.String.htmlDecode",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlDecode",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlDecode",
-	"different": true
-},
-{
-	"name": "Ext.String.insert",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-insert"
-},
-{
-	"name": "Ext.String.startsWith",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-startsWith"
-},
-{
-	"name": "Ext.String.endsWith",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-endsWith"
-},
-{
-	"name": "Ext.String.addCharacterEntities",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-addCharacterEntities"
-},
-{
-	"name": "Ext.String.resetCharacterEntities",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-resetCharacterEntities"
-},
-{
-	"name": "Ext.String.urlAppend",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-urlAppend",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-urlAppend"
-},
-{
-	"name": "Ext.String.trim",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-trim",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-trim"
-},
-{
-	"name": "Ext.String.capitalize",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-capitalize",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-capitalize"
-},
-{
-	"name": "Ext.String.uncapitalize",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-uncapitalize"
-},
-{
-	"name": "Ext.String.ellipsis",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-ellipsis",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-ellipsis"
-},
-{
-	"name": "Ext.String.escapeRegex",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-escapeRegex",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-escapeRegex"
-},
-{
-	"name": "Ext.String.escape",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-escape",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-escape"
-},
-{
-	"name": "Ext.String.toggle",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-toggle",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-toggle"
-},
-{
-	"name": "Ext.String.leftPad",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-leftPad",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-leftPad"
-},
-{
-	"name": "Ext.String.format",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-format",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-format"
-},
-{
-	"name": "Ext.String.repeat",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-repeat",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-repeat",
-	"different": true,
-	"notes": "Ext checks for a negative count."
-},
-{
-	"name": "Ext.String.createVarName",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-createVarName"
-},
-{
-	"name": "Ext.String.splitWords",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-splitWords"
-},
-
-/* * * * * * * * * * * *
-
- Ext.Number
-
- * * * * * * * * * * * */
-
-{
-	"name": "Ext.Number.constrain",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-constrain",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-constrain",
-	"different": true,
-	"notes": "Most notably, implementations deal with NaN differently."
-},
-{
-	"name": "Ext.Number.snap",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-snap",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-snap",
-	"notes": "Implementations vary slightly."
-},
-{
-	"name": "Ext.Number.snapInRange",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-snapInRange"
-},
-{
-	"name": "Ext.Number.toFixed",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-toFixed",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-toFixed",
-	"notes": "Implementations vary slightly."
-},
-{
-	"name": "Ext.Number.from",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-from",
-	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Number-method-from"
-},
-{
-	"name": "Ext.Number.randomInt",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-randomInt"
-},
-{
-	"name": "Ext.Number.correctFloat",
-	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.Number-method-correctFloat"
 },
 
 ];
