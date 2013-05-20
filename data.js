@@ -131,6 +131,7 @@ var data = [
 	"name": "Ext.isFunction",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-isFunction",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-isFunction",
+	"different": true,
 	"notes": "Implementations vary. Ext checks for a custom internal property called $extIsFunction. Touch works out some Safari inconsistencies."
 },
 {
@@ -172,6 +173,7 @@ var data = [
 	"name": "Ext.isIterable",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-isIterable",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-isIterable",
+	"different": true,
 	"notes": "Implementations vary. Ext's seems more reliable."
 },
 {
@@ -196,12 +198,14 @@ var data = [
 	"name": "Ext.functionFactory",
 	"ext": true,
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-functionFactory",
+	"different": true,
 	"notes": "Implementations vary. Private."
 },
 {
 	"name": "Ext.globalEval",
 	"ext": true,
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-property-globalEval",
+	"different": true,
 	"notes": "Ext has \"var Ext = this.ext\" before calling the eval. Touch does not."
 },
 {
@@ -261,12 +265,14 @@ var data = [
 	"name": "Ext.htmlEncode",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-htmlEncode",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-htmlEncode",
+	"different": true,
 	"notes": "Deprecated."
 },
 {
 	"name": "Ext.htmlDecode",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext-method-htmlDecode",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext-method-htmlDecode",
+	"different": true,
 	"notes": "Deprecated."
 },
 {
@@ -414,7 +420,6 @@ var data = [
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Version-static-method-getComponentValue"
 },
 
-
 /* * * * * * * * * * * *
 
  Ext.String
@@ -445,12 +450,14 @@ var data = [
 	"name": "Ext.String.htmlEncode",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlEncode",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlEncode",
+	"different": true,
 	"notes": "Implementations vary."
 },
 {
 	"name": "Ext.String.htmlDecode",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-htmlDecode",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-htmlDecode",
+	"different": true,
 	"notes": "Implementations vary."
 },
 {
@@ -526,6 +533,7 @@ var data = [
 	"name": "Ext.String.repeat",
 	"ext": "http://docs.sencha.com/extjs/4.2.0/#!/api/Ext.String-method-repeat",
 	"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.String-method-repeat",
+	"different": true,
 	"notes": "Ext checks for a negative count."
 },
 {
