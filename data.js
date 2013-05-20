@@ -306,12 +306,12 @@ var data = {
 		"touch": "http://docs.sencha.com/touch/2.2.0/#!/api/Ext.Array-method-each"
 	},
 	{
-		"name": "Ext.Array.erase"
+		"name": "Ext.Array.erase",
 		"ext": "",
 		"touch": ""
 	},
 	{
-		"name": "Ext.Array.splice"
+		"name": "Ext.Array.splice",
 		"ext": "",
 		"touch": ""
 	},
